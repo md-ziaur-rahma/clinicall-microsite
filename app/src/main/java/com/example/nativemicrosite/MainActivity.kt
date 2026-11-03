@@ -144,7 +144,7 @@ class MainActivity : ComponentActivity() {
                                 Log.d("Native Microsite Log", "Passed Token: $token")
                                 MicrositeWebView(
                                     micrositeUrl = "https://microsite.theclinicall.com/",
-//                                    micrositeUrl = "http://192.168.10.45:3002/",
+//                                    micrositeUrl = "http://192.168.10.12:3002/",
                                   token = token,
                                     onTokenExpired = {
                                         regenerateToken()
@@ -180,10 +180,16 @@ class MainActivity : ComponentActivity() {
                     countryCode = "BD",
                     dialCode = "880",
 //                    phone = "1987089980",// bkash test number
-                    phone = "1401840479", // badhon test number
+//                    phone = "1401840479", // badhon test number
+                    phone = "1409900060", // Shahjalal bl-test number
                     // for live token old
 //                    accessKey = "DJ4AZ25ZGYMOA5K3PDP6MGIRIWC9IEIHGZ5XRTT2WI0798TO80OJT7FT5D54G34Z"
-                    accessKey = "C9IEIHGZ5XRTT24ZDJ4AZ25ZGYMOA5K3PDP6MGIRIWWI0798TO80OJT7FT5D54G3"
+                    // for upay-test
+//                    accessKey = "C9IEIHGZ5XRTT24ZDJ4AZ25ZGYMOA5K3PDP6MGIRIWWI0798TO80OJT7FT5D54G3"
+                    // for bl-test
+                    accessKey = "DJ4AZ25ZGYMOA5K3PDP6MGIRIWC9IEIHGZ5XRTT2WI0798TO80OJT7FT5D54G34Z"
+                    // for upay-live
+//                    accessKey = "GYMOA5K3PDC9IEIHGZ5XRTP6MGIRIWWI0798TO80OJT7FT5D54G3T24ZDJ4AZ25Z"
 //                    accessKey = "P3X9MN2K5R7T8W4Q6A1Z0YBCDEFGHIJLSUVWO9K4M2N8"
 //                    accessKey = "YASIDG57BIIRYBE4FCGWCKQ6MW4IOG9FFXKQV2BT2MRQCMKU9HDGILAUU9BMHL63"
                 )

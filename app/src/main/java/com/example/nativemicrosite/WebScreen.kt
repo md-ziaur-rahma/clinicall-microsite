@@ -37,6 +37,14 @@ fun MicrositeWebView(
         modifier = modifier.fillMaxSize(),
         factory = { context ->
             WebView(context).apply {
+                // Prevent Android Autofill popup from interfering with WebView input
+                importantForAutofill =
+                    View.IMPORTANT_FOR_AUTOFILL_NO_EXCLUDE_DESCENDANTS
+
+                // Keep WebView focusable
+                isFocusable = true
+                isFocusableInTouchMode = true
+
                 settings.loadsImagesAutomatically = true
                 settings.domStorageEnabled = true
                 settings.javaScriptEnabled = true
